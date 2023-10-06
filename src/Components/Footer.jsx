@@ -1,9 +1,7 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <div>
-      <h3>header</h3>
+      <h3>footer</h3>
     </div>
   );
 };
