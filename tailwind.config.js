@@ -11,7 +11,10 @@ export default {
           DEFAULT: "#fcb900",
         },
       },
+      backgroundImage: {
+        banner: "url('https://i.ibb.co/DzVtV7r/banner.jpg')",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
