@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useAuth();
   const location = useLocation();
-  console.log(location);
   if (loading) {
     return (
       <div className="max-w-7xl mx-auto flex justify-center items-center h-screen">
