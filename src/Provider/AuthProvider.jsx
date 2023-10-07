@@ -46,8 +46,8 @@ const AuthProvider = ({ children }) => {
 
   const Authentication = {
     createAccWithEmailPass,
-    googleLogin,
     signInWithEmailPass,
+    googleLogin,
     logout,
     user,
     loading,

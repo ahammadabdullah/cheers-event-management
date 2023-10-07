@@ -4,12 +4,25 @@ import useAuth from "../Hooks/useAuth";
 import { toast } from "react-hot-toast";
 
 const Login = () => {
-  const { googleLogin } = useAuth();
+  const { googleLogin, signInWithEmailPass } = useAuth();
 
   const handleGoogleLogin = () => {
     googleLogin()
       .then(() => toast.success("Successfully logged in"))
       .catch((err) => toast.error(err.message));
+  };
+  const handleEmailLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    signInWithEmailPass(email, password)
+      .then(() => {
+        toast.success("Successfully logged in");
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
   };
   return (
     <div className="bg-base-300 min-h-screen ">
@@ -20,7 +33,7 @@ const Login = () => {
               Login to your account
             </h3>
             <hr />
-            <form className="pt-10">
+            <form onSubmit={handleEmailLogin} className="pt-10">
               <label className="block text-left">Email Address</label>
               <input
                 className="w-full bg-gray-100 py-5 pl-5 my-4 text-primary focus:border-primary  focus:outline-primary "

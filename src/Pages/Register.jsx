@@ -1,6 +1,32 @@
 import { Link } from "react-router-dom";
+import useAuth from "../Hooks/useAuth";
+import { toast } from "react-hot-toast";
+import { updateProfile } from "firebase/auth";
+import auth from "../config/config.firebase";
 
 const Register = () => {
+  const { createAccWithEmailPass } = useAuth();
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    const name = e.target.name.value;
+    const photoURL = e.target.photo.value;
+    createAccWithEmailPass(email, password, name, photoURL)
+      .then(() =>
+        updateProfile(auth.currentUser, {
+          displayName: name,
+          photoURL: photoURL,
+        })
+          .then((res) => {
+            toast.success("Successfully account created");
+            console.log(res);
+          })
+          .catch((err) => toast.error(err.message))
+      )
+      .catch((err) => toast.error(err.message));
+  };
   return (
     <div>
       <div className="bg-base-300  ">
@@ -12,7 +38,7 @@ const Register = () => {
                   Register your account
                 </h3>
                 <hr />
-                <form className="pt-10">
+                <form onSubmit={handleRegister} className="pt-10">
                   <label className="block text-left">Your Name</label>
                   <input
                     className="w-full bg-gray-100 py-5 pl-5 my-4 focus:outline-primary text-primary"
@@ -33,6 +59,7 @@ const Register = () => {
                     type="email"
                     name="email"
                     placeholder="Email"
+                    required
                   />
                   <label className="block text-left">Password</label>
                   <input
@@ -40,6 +67,7 @@ const Register = () => {
                     type="password"
                     name="password"
                     placeholder="Password"
+                    required
                   />
                   <input
                     className="w-full bg-primary rounded-md py-4 text-white my-4"
