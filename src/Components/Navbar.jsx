@@ -3,7 +3,16 @@ import { Link, NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 
 import logo from "../assets/logo.png";
+import useAuth from "../Hooks/useAuth";
+import { toast } from "react-hot-toast";
+
 const Navbar = () => {
+  const { user, logout } = useAuth();
+  const handleLogout = () => {
+    logout()
+      .then(() => toast.success("Logged out Successfully"))
+      .catch((err) => toast.error(err.message));
+  };
   return (
     <div className="flex-row-reverse lg:flex-row px-6 lg:px-0 flex justify-between items-center max-w-7xl mx-auto py-6 ">
       {/* logo */}
@@ -17,12 +26,21 @@ const Navbar = () => {
       </div>
       <div className="dropdown lg:hidden">
         <label tabIndex={0} className=" text-3xl">
-          <IoMenu />
+          {user?.photoURL ? (
+            <img
+              className="rounded-full w-[30px]"
+              src={user?.photoURL}
+              alt="user avatar"
+            />
+          ) : (
+            <IoMenu />
+          )}
         </label>
         <ul
           tabIndex={0}
           className=" menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-36"
         >
+          {user && <li className="py-1 px-2">{user?.displayName}</li>}
           <li>
             <NavLink
               to="/"
@@ -66,18 +84,34 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/login"
-              className={({ isActive, isPending }) =>
-                isPending
-                  ? "pending"
-                  : isActive
-                  ? "py-1 px-2 bg-primary text-white rounded-lg"
-                  : ""
-              }
-            >
-              Login
-            </NavLink>
+            {user ? (
+              <button onClick={handleLogout}>
+                <NavLink
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "py-1 px-2 bg-primary text-white rounded-lg"
+                      : ""
+                  }
+                >
+                  Log Out
+                </NavLink>
+              </button>
+            ) : (
+              <NavLink
+                to="/login"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "py-1 px-2 bg-primary text-white rounded-lg"
+                    : ""
+                }
+              >
+                Login
+              </NavLink>
+            )}
           </li>
         </ul>
       </div>
@@ -126,10 +160,29 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <div>
-          <button className="py-2 px-3 bg-primary text-white rounded-lg">
-            <Link to={"/login"}>Login</Link>
-          </button>
+        <div className="flex items-center">
+          {user?.photoURL && (
+            <img
+              className="rounded-full w-[30px]"
+              src={user?.photoURL}
+              alt="user avatar"
+            />
+          )}
+          {user?.displayName && (
+            <p className="py-1 px-2">{user?.displayName}</p>
+          )}
+          {user ? (
+            <button
+              onClick={handleLogout}
+              className="py-2 px-3 bg-primary text-white rounded-lg"
+            >
+              <Link>Logout</Link>
+            </button>
+          ) : (
+            <button className="py-2 px-3 bg-primary text-white rounded-lg">
+              <Link to={"/login"}>Login</Link>
+            </button>
+          )}
         </div>
       </div>
     </div>

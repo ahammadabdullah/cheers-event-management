@@ -1,7 +1,16 @@
 import { IoLogoGoogle } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import useAuth from "../Hooks/useAuth";
+import { toast } from "react-hot-toast";
 
 const Login = () => {
+  const { googleLogin } = useAuth();
+
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then(() => toast.success("Successfully logged in"))
+      .catch((err) => toast.error(err.message));
+  };
   return (
     <div className="bg-base-300 min-h-screen ">
       <div className="max-w-7xl mx-auto py-20">
@@ -47,7 +56,10 @@ const Login = () => {
               Continue With
             </p>
             <div className="pb-8">
-              <button className="w-full py-4 flex items-center justify-center gap-3 text-primary border-2 rounded-md border-primary ">
+              <button
+                onClick={handleGoogleLogin}
+                className="w-full py-4 flex items-center justify-center gap-3 text-primary border-2 rounded-md border-primary "
+              >
                 {" "}
                 <IoLogoGoogle /> <span className="font-bold">Google</span>
               </button>
