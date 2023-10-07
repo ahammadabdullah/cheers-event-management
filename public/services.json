@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Wedding Planning and Coordination",
+    "title": "Wedding Planning ",
     "headline": "A Wedding That's Uniquely You",
     "shortDesc": "Make your dream wedding come to life with Cheers' full planning services. Our team handles every detail so you can enjoy a stress-free event.",
     "fullDesc": "From venue selection to decor, Cheers is by your side for every step of wedding planning. Our personalized services include securing vendors, budget management, guest coordination, and day-of event execution. We help you craft a wedding that reflects your style and love story.",
@@ -33,7 +33,7 @@
     "shortDesc": "Celebrate your graduate in style with a personalized graduation party expertly planned by Cheers!",
     "fullDesc": "Honor your graduate with a memorable celebration coordinated by our team. We handle customized invitations, venue selection, catering, decorations, entertainment and all event logistics.",
     "pricing": "$1,200",
-    "image": "https://i.ibb.co/Qcm6nPG/graduation.jpg"
+    "image": "https://i.ibb.co/t4vMwXt/graduation-L.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "shortDesc": "Spread holiday cheer with a company, family or friend celebration meticulously planned by Cheers. Custom packages available.",
     "fullDesc": "Our team specializes in planning memorable holiday events of all types and sizes. From intimate gatherings to large-scale galas, we handle every detail including venue, catering, entertainment, decor and coordination.",
     "pricing": "$1,800",
-    "image": "https://i.ibb.co/DfdVTT7/holiday.jpg"
+    "image": "https://i.ibb.co/CMvTF85/holidayparty.jpg"
   },
   {
     "id": 6,
