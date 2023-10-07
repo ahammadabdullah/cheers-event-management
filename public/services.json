@@ -1,22 +1,48 @@
 [
   {
-    "id": 1,
+    "id": 1, 
     "title": "Wedding",
     "headline": "A Wedding That's Uniquely You",
     "shortDesc": "Make your dream wedding come to life with Cheers' full planning services. Our team handles every detail so you can enjoy a stress-free event.",
     "fullDesc": "From venue selection to decor, Cheers is by your side for every step of wedding planning. Our personalized services include securing vendors, budget management, guest coordination, and day-of event execution. We help you craft a wedding that reflects your style and love story.",
-    "pricing": "$3,500",
-    "image": "https://i.ibb.co/dDFv1B7/wedding.jpg"
+    "pricing": "$3,500", 
+    "image": "https://i.ibb.co/dDFv1B7/wedding.jpg",
+    "features": [
+      "Finding the perfect wedding venue",
+      "Hiring the best vendors within your budget",
+      "Handling all RSVPs and guest list details",
+      "Creating a unique wedding theme and design",
+      "Coordinating the rehearsal dinner",
+      "Assembling welcome bags for out of town guests",
+      "Day-of wedding coordination",
+      "Setting up wedding day decor",
+      "Managing the wedding timeline",
+      "Ensuring everything runs smoothly"
+    ]
   },
+
   {
     "id": 2,
-    "title": "Anniversary Party",
+    "title": "Anniversary Party", 
     "headline": "Celebrate Your Years Together",
     "shortDesc": "Mark your milestone anniversary surrounded by loved ones with a celebration planned by Cheers. We handle invitations, catering, decor and more!",
     "fullDesc": "Honor your lives together with an unforgettable anniversary event planned by our team. We manage venue selection, catering, entertainment, guest services and event styling to match your anniversary theme and vision.",
-    "pricing": "$1,500", 
-    "image": "https://i.ibb.co/X2nCZN6/anniversary.jpg"
+    "pricing": "$1,500",
+    "image": "https://i.ibb.co/X2nCZN6/anniversary.jpg",
+    "features": [
+      "Selecting a venue that suits your style",
+      "Recommending caterers suited for your taste",
+      "Designing unique invitations",
+      "Crafting a special anniversary theme",  
+      "Booking entertainment and photographers",
+      "Curating memorable photo booths",
+      "Handling all vendor communication",
+      "Procuring decorations and supplies",  
+      "Coordinating event set up and execution",
+      "Ensuring a flawless, fun event"
+    ]
   },
+  
   {
     "id": 3,
     "title": "Birthday Party",
@@ -24,8 +50,21 @@
     "shortDesc": "Let Cheers take care of every birthday event detail so you can focus on the fun! Custom party planning and coordination for all ages.",
     "fullDesc": "Surprise your loved one with a custom birthday party tailored to their interests! Our services include venue sourcing, decor, entertainment, catering, cake, and complete event coordination.",
     "pricing": "$800",
-    "image": "https://i.ibb.co/9vbmJWG/birthday.jpg"
+    "image": "https://i.ibb.co/9vbmJWG/birthday.jpg", 
+    "features": [
+      "Venue selection and booking",
+      "Unique party theme and design creation",
+      "Catering menu consultation",
+      "Custom birthday cake ordering",
+      "Booking entertainment and performers",  
+      "Handling all invitations and RSVPs",
+      "Procuring party supplies and favors",
+      "Arranging photo booth or photographer",
+      "Managing party setup and execution", 
+      "Ensuring a stress-free, fun event"  
+    ]
   },
+  
   {
     "id": 4,
     "title": "Graduation Party",
@@ -33,8 +72,21 @@
     "shortDesc": "Celebrate your graduate in style with a personalized graduation party expertly planned by Cheers!",
     "fullDesc": "Honor your graduate with a memorable celebration coordinated by our team. We handle customized invitations, venue selection, catering, decorations, entertainment and all event logistics.",
     "pricing": "$1,200",
-    "image": "https://i.ibb.co/t4vMwXt/graduation-L.jpg"
+    "image": "https://i.ibb.co/t4vMwXt/graduation-L.jpg",
+    "features": [
+      "Finding a venue perfect for your grad",
+      "Creating a unique graduation theme",
+      "Handling invitations and guest list",
+      "Booking catering and entertainment",
+      "Ordering a custom grad cake",
+      "Procuring party supplies and decor",
+      "Setting up grad party decorations", 
+      "Coordinating photographer and photo booth",
+      "Managing vendor communications",
+      "Ensuring a flawless, memorable event"
+    ]
   },
+
   {
     "id": 5,
     "title": "Holiday Party",
@@ -42,15 +94,40 @@
     "shortDesc": "Spread holiday cheer with a company, family or friend celebration meticulously planned by Cheers. Custom packages available.",
     "fullDesc": "Our team specializes in planning memorable holiday events of all types and sizes. From intimate gatherings to large-scale galas, we handle every detail including venue, catering, entertainment, decor and coordination.",
     "pricing": "$1,800",
-    "image": "https://i.ibb.co/CMvTF85/holidayparty.jpg"
+    "image": "https://i.ibb.co/CMvTF85/holidayparty.jpg",
+    "features": [
+      "Venue selection for optimal holiday vibe",
+      "Unique holiday party theme creation",
+      "Festive catering menu design",
+      "Booking lively holiday entertainment",
+      "Procuring stunning decorations",
+      "Handling holiday invite design and mailing",
+      "Arranging perfect holiday photo ops",  
+      "Planning fun holiday activities",
+      "Managing vendor relations",
+      "Executing a flawless holiday event"  
+    ]
   },
+
   {
     "id": 6,
-    "title": "Bridal and Baby Shower",
-    "headline": "Celebrate Life's Greatest Moments", 
+    "title": "Bridal and Baby Shower", 
+    "headline": "Celebrate Life's Greatest Moments",
     "shortDesc": "Let Cheers meticulously plan your bridal or baby shower! Our team handles every detail from invites to favors so you can enjoy your special day.",
     "fullDesc": "Honor your bride-to-be or mom-to-be with a delightful shower planned and executed by our experts. We customize every element from venue selection to menus to decor for an occasion as unique as your guest of honor.",
     "pricing": "$900",
-    "image": "https://i.ibb.co/G945MKW/baby-shower.jpg"
+    "image": "https://i.ibb.co/G945MKW/baby-shower.jpg",
+    "features": [
+      "Venue selection suited to guest of honor",  
+      "Unique shower theme and decor creation",
+      "Tailored catering menu design",
+      "Handling all invitations and RSVPs",
+      "Booking entertainment and photographers",
+      "Procuring supplies, games, favors",
+      "Setting up decorations and activities",
+      "Arranging stunning floral arrangements",
+      "Managing vendor relations",
+      "Executing a delightful, memorable shower"
+    ]
   }
 ]

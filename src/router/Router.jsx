@@ -6,6 +6,7 @@ import Contact from "../Pages/Contact";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import ErrorPage from "../Pages/ErrorPage";
+import ServiceDetails from "../Pages/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/services/:id",
+        element: <ServiceDetails />,
       },
       {
         path: "/about",

@@ -17,7 +17,7 @@ const Footer = () => {
           </Link>
         </nav>
         <nav>
-          <div className="grid grid-flow-col gap-4">
+          <div className="grid grid-flow-col gap-4 text-primary">
             <a>
               <IoLogoFacebook />
             </a>
@@ -30,7 +30,10 @@ const Footer = () => {
           </div>
         </nav>
         <aside>
-          <p>Copyright © 2023 - All right reserved by Cheers.</p>
+          <p>
+            Copyright © 2023 - All right reserved by{" "}
+            <span className="font-medium text-primary">Cheers</span>.
+          </p>
         </aside>
       </footer>
     </div>

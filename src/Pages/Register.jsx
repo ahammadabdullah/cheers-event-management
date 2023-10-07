@@ -6,6 +6,7 @@ import auth from "../config/config.firebase";
 
 const Register = () => {
   const { createAccWithEmailPass } = useAuth();
+  // eslint-disable-next-line no-useless-escape
   const passRegex = /^(?=.*[A-Z])(?=.*[!@#\$%\^&\*])(?=.{6,})/;
   const handleRegister = (e) => {
     e.preventDefault();
