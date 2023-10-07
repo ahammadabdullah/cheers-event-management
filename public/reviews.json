@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1, 
+      "name": "Emily S.",
+      "review": "Cheers made wedding planning stress-free. They handled every detail perfectly and brought my vision to life."
+    },
+    {
+      "id": 2,
+      "name": "Michael D.", 
+      "review": "Cheers planned an amazing graduation party that truly reflected my daughter's personality. Guests loved the decor and food."
+    },
+    {
+      "id": 3,
+      "name": "Julia R.",
+      "review": "Our holiday party with Cheers last year was fantastic. Perfect venue, entertainment - everything was festive and fun."
+    },
+    {
+      "id": 4,
+      "name": "Ryan B.",
+      "review": "Cheers planned an unforgettable birthday party for me with all my closest friends. It was personalized and special."
+    },
+    {
+      "id": 5,
+      "name": "Sophia and Jordan K.",
+      "review": "Cheers made our wedding dreams come true with thoughtful, custom details from start to finish. Absolute professionals." 
+    }
+  ]

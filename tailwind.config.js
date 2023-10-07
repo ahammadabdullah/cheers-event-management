@@ -15,7 +15,7 @@ export default {
         vidaloka: ["Vidaloka", "sans-serif"],
       },
       backgroundImage: {
-        banner: "url('https://i.ibb.co/DzVtV7r/banner.jpg')",
+        banner: "url('https://i.ibb.co/9vbmJWG/birthday.jpg')",
         portfolio: "url('https://i.ibb.co/tmnhcfM/bg-portfolio.jpg')",
       },
     },

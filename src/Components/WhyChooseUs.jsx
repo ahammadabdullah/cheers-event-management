@@ -1,15 +1,6 @@
 import { IoCheckmarkSharp } from "react-icons/io5";
 import baby from "../assets/baby.png";
 const WhyChooseUs = () => {
-  //     Scouting a venue
-  // Developing a theme
-  // Coordinating paper goods with a stationery vendor
-  // Organizing a tasting with up to three caterers
-  // Recommending up to three florists (if necessary)
-  // Recommending up to three photographers (if necessary)
-  // Managing your guest list
-  // Assisting with rentals
-  // And, depending on the wishes, being on-site or on-call during the event to ensure everything runs smoothly
   return (
     <div className="bg-base-300 pt-10">
       <div className="max-w-7xl mx-auto">

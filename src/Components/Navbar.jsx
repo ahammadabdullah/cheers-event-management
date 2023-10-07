@@ -33,7 +33,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? " py-1 px-2 bg-secondary rounded-lg"
+                  ? " py-1 px-2 bg-primary text-white rounded-lg"
                   : ""
               }
             >
@@ -47,7 +47,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "py-1 px-2 bg-secondary rounded-lg"
+                  ? "py-1 px-2 bg-primary text-white rounded-lg"
                   : ""
               }
             >
@@ -61,11 +61,25 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "py-1 px-2 bg-secondary rounded-lg"
+                  ? "py-1 px-2 bg-primary text-white rounded-lg"
                   : ""
               }
             >
               Contact Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/login"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "py-1 px-2 bg-primary text-white rounded-lg"
+                  : ""
+              }
+            >
+              Login
             </NavLink>
           </li>
         </ul>
@@ -79,7 +93,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? " py-1 px-2 bg-secondary rounded-lg"
+                  ? " py-1 px-2 bg-primary text-white rounded-lg"
                   : ""
               }
             >
@@ -93,7 +107,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "py-1 px-2 bg-secondary rounded-lg"
+                  ? "py-1 px-2 bg-primary text-white rounded-lg"
                   : ""
               }
             >
@@ -107,7 +121,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "py-1 px-2 bg-secondary rounded-lg"
+                  ? "py-1 px-2 bg-primary text-white rounded-lg"
                   : ""
               }
             >
@@ -116,7 +130,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div>
-          <button className="py-2 px-3 bg-primary rounded-lg">
+          <button className="py-2 px-3 bg-primary text-white rounded-lg">
             <Link to={"/login"}>Login</Link>
           </button>
         </div>
