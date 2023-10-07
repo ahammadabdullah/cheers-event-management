@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <div>
       {/* banner section */}
-      <div className="bg-banner bg-blend-overlay bg-slate-500 md:h-[600px] h-[350px]  flex items-center justify-center">
+      <div className="bg-banner bg-cover bg-blend-overlay bg-gray-700 md:h-[600px] h-[350px]  flex items-center justify-center">
         <div className=" ">
           <div className="text-center px-6">
             <h1 className="text-primary text-left text-4xl font-extrabold tracking-tight  sm:text-5xl md:text-6xl">
