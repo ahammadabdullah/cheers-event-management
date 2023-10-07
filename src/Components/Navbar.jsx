@@ -5,7 +5,7 @@ import { IoMenu } from "react-icons/io5";
 import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
-    <div className="flex-row-reverse lg:flex-row px-6 lg:px-0 flex justify-between items-center max-w-7xl mx-auto py-6 shadow-lg">
+    <div className="flex-row-reverse lg:flex-row px-6 lg:px-0 flex justify-between items-center max-w-7xl mx-auto py-6 ">
       {/* logo */}
       <div className="flex gap-3 items-center flex-row-reverse lg:flex-row">
         <img className="w-[50px]" src={logo} alt="logo" />
