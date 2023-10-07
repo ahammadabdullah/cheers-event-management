@@ -69,22 +69,41 @@ const Navbar = () => {
               About
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive, isPending }) =>
-                isPending
-                  ? "pending"
-                  : isActive
-                  ? "py-1 px-2 bg-primary text-white rounded-lg"
-                  : ""
-              }
-            >
-              Contact Us
-            </NavLink>
-          </li>
-          <li>
-            {user ? (
+          {user && (
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "py-1 px-2 bg-primary text-white rounded-lg"
+                    : ""
+                }
+              >
+                Contact Us
+              </NavLink>
+            </li>
+          )}
+          {user && (
+            <li>
+              <NavLink
+                to="/team"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "py-1 px-2 bg-primary text-white rounded-lg"
+                    : ""
+                }
+              >
+                Our Team
+              </NavLink>
+            </li>
+          )}
+
+          {user ? (
+            <li>
               <button onClick={handleLogout}>
                 <NavLink
                   className={({ isActive, isPending }) =>
@@ -98,7 +117,9 @@ const Navbar = () => {
                   Log Out
                 </NavLink>
               </button>
-            ) : (
+            </li>
+          ) : (
+            <li>
               <NavLink
                 to="/login"
                 className={({ isActive, isPending }) =>
@@ -110,9 +131,9 @@ const Navbar = () => {
                 }
               >
                 Login
-              </NavLink>
-            )}
-          </li>
+              </NavLink>{" "}
+            </li>
+          )}
         </ul>
       </div>
       <div className="hidden lg:flex justify-between items-center w-[60%]">
@@ -145,20 +166,38 @@ const Navbar = () => {
               About
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive, isPending }) =>
-                isPending
-                  ? "pending"
-                  : isActive
-                  ? "py-1 px-2 bg-primary text-white rounded-lg"
-                  : ""
-              }
-            >
-              Contact Us
-            </NavLink>
-          </li>
+          {user && (
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "py-1 px-2 bg-primary text-white rounded-lg"
+                    : ""
+                }
+              >
+                Contact Us
+              </NavLink>
+            </li>
+          )}
+          {user && (
+            <li>
+              <NavLink
+                to="/team"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "py-1 px-2 bg-primary text-white rounded-lg"
+                    : ""
+                }
+              >
+                Our Team
+              </NavLink>
+            </li>
+          )}
         </ul>
         <div className="flex items-center">
           {user?.photoURL && (

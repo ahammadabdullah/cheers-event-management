@@ -8,6 +8,7 @@ import Register from "../Pages/Register";
 import ErrorPage from "../Pages/ErrorPage";
 import ServiceDetails from "../Pages/ServiceDetails";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Team from "../Pages/Team";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,20 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Contact />,
+        element: (
+          <PrivateRoute>
+            <Contact />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/team",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <Team />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",

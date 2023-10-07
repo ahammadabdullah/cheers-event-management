@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Mary Johnson", 
+      "designation": "Founder and CEO",
+      "image": "https://i.ibb.co/BsJBqM2/member4.png"
+    },
+    {
+      "id": 2,
+      "name": "John Smith",
+      "designation": "Chief Operating Officer",
+      "image": "https://i.ibb.co/gjPT13W/member1.png"
+    },
+    {
+      "id": 3,
+      "name": "Elizabeth Williams",
+      "designation": "Lead Event Planner",
+      "image": "https://i.ibb.co/1XjfHKL/member2.png"
+    },
+    {
+      "id": 4,
+      "name": "Robert Davis",
+      "designation": "Senior Event Coordinator",
+      "image": "https://i.ibb.co/4dvWJr5/member3.png"
+    }
+  ]
