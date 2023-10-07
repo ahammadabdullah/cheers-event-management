@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Wedding Planning ",
+    "title": "Wedding",
     "headline": "A Wedding That's Uniquely You",
     "shortDesc": "Make your dream wedding come to life with Cheers' full planning services. Our team handles every detail so you can enjoy a stress-free event.",
     "fullDesc": "From venue selection to decor, Cheers is by your side for every step of wedding planning. Our personalized services include securing vendors, budget management, guest coordination, and day-of event execution. We help you craft a wedding that reflects your style and love story.",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "title": "Anniversary Party Planning",
+    "title": "Anniversary Party",
     "headline": "Celebrate Your Years Together",
     "shortDesc": "Mark your milestone anniversary surrounded by loved ones with a celebration planned by Cheers. We handle invitations, catering, decor and more!",
     "fullDesc": "Honor your lives together with an unforgettable anniversary event planned by our team. We manage venue selection, catering, entertainment, guest services and event styling to match your anniversary theme and vision.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "title": "Birthday Party Planning",
+    "title": "Birthday Party",
     "headline": "Celebrate Your Special Day in Style",
     "shortDesc": "Let Cheers take care of every birthday event detail so you can focus on the fun! Custom party planning and coordination for all ages.",
     "fullDesc": "Surprise your loved one with a custom birthday party tailored to their interests! Our services include venue sourcing, decor, entertainment, catering, cake, and complete event coordination.",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "title": "Graduation Party Planning",
+    "title": "Graduation Party",
     "headline": "Commemorate Your Achievement",
     "shortDesc": "Celebrate your graduate in style with a personalized graduation party expertly planned by Cheers!",
     "fullDesc": "Honor your graduate with a memorable celebration coordinated by our team. We handle customized invitations, venue selection, catering, decorations, entertainment and all event logistics.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "title": "Holiday Party Planning",
+    "title": "Holiday Party",
     "headline": "'Tis the Season for Celebrating",
     "shortDesc": "Spread holiday cheer with a company, family or friend celebration meticulously planned by Cheers. Custom packages available.",
     "fullDesc": "Our team specializes in planning memorable holiday events of all types and sizes. From intimate gatherings to large-scale galas, we handle every detail including venue, catering, entertainment, decor and coordination.",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "title": "Bridal and Baby Shower Planning",
+    "title": "Bridal and Baby Shower",
     "headline": "Celebrate Life's Greatest Moments", 
     "shortDesc": "Let Cheers meticulously plan your bridal or baby shower! Our team handles every detail from invites to favors so you can enjoy your special day.",
     "fullDesc": "Honor your bride-to-be or mom-to-be with a delightful shower planned and executed by our experts. We customize every element from venue selection to menus to decor for an occasion as unique as your guest of honor.",

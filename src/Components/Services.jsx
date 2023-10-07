@@ -15,16 +15,18 @@ const Services = () => {
       <div className="max-w-7xl mx-auto   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-5">
         {services.map((service) => {
           return (
-            <div className="mx-auto w-[350px]" key={service.id}>
+            <div className="mx-auto w-[350px] " key={service.id}>
               <img
                 className="h-[214px] w-[350px]"
                 src={service.image}
                 alt={service.title}
               />
-              <div>
-                <h2 className="text-xl font-semibold py-3">{service.title}</h2>
-                <p className="h-[105px]">{service.shortDesc}</p>
-                <h2 className="pb-3">
+              <div className="border border-primary ">
+                <h2 className="text-xl font-semibold py-3 pl-3">
+                  {service.title}
+                </h2>
+                <p className="pl-3 h-[105px]">{service.shortDesc}</p>
+                <h2 className="pl-3 pb-3 pt-3">
                   Pricing starts from:{" "}
                   <span className="font-bold">{service.pricing}</span>
                 </h2>
