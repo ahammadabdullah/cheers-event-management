@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
+import { Helmet } from "react-helmet";
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -22,6 +23,9 @@ const ServiceDetails = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
+      <Helmet>
+        <title> Cheers | {service?.title ? service?.title : "Services"} </title>
+      </Helmet>
       <img className="w-full" src={service?.image} alt="" />
       <div className="w-3/4 mx-auto">
         <h3 className="text-4xl py-4 font-bold text-primary">

@@ -1,7 +1,12 @@
+import { Helmet } from "react-helmet";
+
 /* eslint-disable react/no-unescaped-entities */
 const About = () => {
   return (
     <div className="sm:flex items-center max-w-screen-xl mx-auto">
+      <Helmet>
+        <title> Cheers | About</title>
+      </Helmet>
       <div className="sm:w-1/2 p-10">
         <div className="image object-center text-center">
           <img src="https://i.ibb.co/SB1wb3F/WbQnbas.png" />

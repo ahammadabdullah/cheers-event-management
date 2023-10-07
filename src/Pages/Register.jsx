@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
 import { toast } from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
@@ -6,6 +6,7 @@ import auth from "../config/config.firebase";
 
 const Register = () => {
   const { createAccWithEmailPass } = useAuth();
+  const navigate = useNavigate();
   // eslint-disable-next-line no-useless-escape
   const passRegex = /^(?=.*[A-Z])(?=.*[!@#\$%\^&\*])(?=.{6,})/;
   const handleRegister = (e) => {
@@ -27,8 +28,9 @@ const Register = () => {
           displayName: name,
           photoURL: photoURL,
         })
-          .then((res) => {
+          .then(() => {
             toast.success("Successfully account created");
+            navigate(location?.state ? location.state : "/");
           })
           .catch((err) => toast.error(err.message))
       )
