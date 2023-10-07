@@ -16,6 +16,7 @@ export default {
       },
       backgroundImage: {
         banner: "url('https://i.ibb.co/9vbmJWG/birthday.jpg')",
+        banner2: "url('https://i.ibb.co/DzVtV7r/banner.jpg')",
         portfolio: "url('https://i.ibb.co/tmnhcfM/bg-portfolio.jpg')",
       },
     },
