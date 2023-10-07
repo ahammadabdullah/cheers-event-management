@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
-import { FiPenTool } from "react-icons/fi";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);

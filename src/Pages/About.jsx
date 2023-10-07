@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 const About = () => {
   return (
     <div className="sm:flex items-center max-w-screen-xl mx-auto">
