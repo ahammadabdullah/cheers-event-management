@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 
 const Team = () => {
@@ -10,6 +11,9 @@ const Team = () => {
   }, []);
   return (
     <div className="bg-banner3 bg-cover bg-blend-overlay bg-gray-700">
+      <Helmet>
+        <title>Cheers | Team</title>
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         <h3 className="text-4xl  text-primary font-bold text-center py-20">
           Meet Our Teams
