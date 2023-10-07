@@ -1,19 +1,29 @@
 import { Helmet } from "react-helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 /* eslint-disable react/no-unescaped-entities */
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="sm:flex items-center max-w-screen-xl mx-auto">
       <Helmet>
         <title> Cheers | About</title>
       </Helmet>
       <div className="sm:w-1/2 p-10">
-        <div className="image object-center text-center">
+        <div
+          data-aos="zoom-in-right"
+          data-aos-duration="2000"
+          className="image object-center text-center"
+        >
           <img src="https://i.ibb.co/SB1wb3F/WbQnbas.png" />
         </div>
       </div>
       <div className="sm:w-1/2 p-5">
-        <div className="text">
+        <div data-aos="zoom-in-left" data-aos-duration="2000" className="text">
           <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">
             About <span className="text-primary">Cheers</span>
           </h2>

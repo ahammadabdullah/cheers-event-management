@@ -1,6 +1,13 @@
 import { IoCheckmarkSharp } from "react-icons/io5";
 import baby from "../assets/baby.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const WhyChooseUs = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="bg-base-300 pt-20">
       <div className="max-w-7xl mx-auto">
@@ -8,7 +15,7 @@ const WhyChooseUs = () => {
           Why Choose Us
         </h3>
         <div className="flex justify-between items-center pt-4">
-          <div className="pl-4">
+          <div data-aos="zoom-in-right" className="pl-4">
             <h3 className="text-primary text-2xl pb-4 ">
               Cause, A partial list of our services includes:
             </h3>
@@ -51,6 +58,7 @@ const WhyChooseUs = () => {
             </ul>
           </div>
           <img
+            data-aos="zoom-in-left"
             className="w-[50%] hidden md:block"
             src={baby}
             alt="baby image"

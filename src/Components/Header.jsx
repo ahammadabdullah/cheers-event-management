@@ -1,10 +1,21 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Header = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       {/* banner section */}
       <div className="bg-banner bg-cover bg-blend-overlay bg-gray-700 md:h-[600px] h-[350px]  flex items-center justify-center">
         <div className=" ">
-          <div className="text-center px-6">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            className="text-center px-6"
+          >
             <h1 className="text-primary text-left text-4xl font-extrabold tracking-tight  sm:text-5xl md:text-6xl">
               We Create
             </h1>

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Team = () => {
   const [data, setData] = useState([]);
@@ -9,12 +11,19 @@ const Team = () => {
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="bg-banner3 bg-cover bg-blend-overlay bg-gray-700">
       <Helmet>
         <title>Cheers | Team</title>
       </Helmet>
-      <div className="max-w-7xl mx-auto">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        className="max-w-7xl mx-auto"
+      >
         <h3 className="text-4xl  text-primary font-bold text-center py-20">
           Meet Our Teams
         </h3>

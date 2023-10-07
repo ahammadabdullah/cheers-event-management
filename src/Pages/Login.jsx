@@ -2,6 +2,9 @@ import { IoLogoGoogle } from "react-icons/io5";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
 import { toast } from "react-hot-toast";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Login = () => {
   const { googleLogin, signInWithEmailPass } = useAuth();
@@ -30,10 +33,17 @@ const Login = () => {
         toast.error(err.message);
       });
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="bg-base-300 min-h-screen ">
       <div className="max-w-7xl mx-auto py-20">
-        <div className="md:w-2/4 w-[90%] bg-white text-center mx-auto">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          className="md:w-2/4 w-[90%] bg-white text-center mx-auto"
+        >
           <div className="w-3/4  mx-auto">
             {location?.state ? (
               <h3 className="text-3xl font-bold pt-20 pb-10 text-primary">
