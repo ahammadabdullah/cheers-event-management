@@ -9,7 +9,7 @@ const Services = () => {
   }, []);
   return (
     <div className="bg-base-300 py-10">
-      <h3 className="text-center text-2xl lg:text-4xl font-bold  text-primary">
+      <h3 className="text-center text-2xl lg:text-4xl font-bold  text-primary font-vidaloka">
         Our Services
       </h3>
       <div className="max-w-7xl mx-auto   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 gap-5">

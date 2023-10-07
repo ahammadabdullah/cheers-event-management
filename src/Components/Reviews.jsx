@@ -10,7 +10,7 @@ const Reviews = () => {
   }, []);
   return (
     <div className="bg-portfolio">
-      <h3 className="pt-20  text-2xl md:text-4xl text-white font-bold text-center ">
+      <h3 className="pt-20  text-2xl md:text-4xl text-white font-bold text-center font-vidaloka">
         Happy Clients About Us
       </h3>
       <div className="text-center w-[90%] lg:w-3/4 mx-auto py-10">

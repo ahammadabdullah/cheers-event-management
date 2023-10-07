@@ -2,9 +2,9 @@ import { IoCheckmarkSharp } from "react-icons/io5";
 import baby from "../assets/baby.png";
 const WhyChooseUs = () => {
   return (
-    <div className="bg-base-300 pt-10">
+    <div className="bg-base-300 pt-20">
       <div className="max-w-7xl mx-auto">
-        <h3 className="text-center text-4xl text-primary font-semibold">
+        <h3 className="text-center text-4xl text-primary font-semibold font-vidaloka">
           Why Choose Us
         </h3>
         <div className="flex justify-between items-center pt-4">

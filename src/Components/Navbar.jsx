@@ -7,15 +7,12 @@ const Navbar = () => {
   return (
     <div className="flex-row-reverse lg:flex-row px-6 lg:px-0 flex justify-between items-center max-w-7xl mx-auto py-6 shadow-lg">
       {/* logo */}
-      <div className="flex gap-3 flex-row-reverse lg:flex-row">
+      <div className="flex gap-3 items-center flex-row-reverse lg:flex-row">
         <img className="w-[50px]" src={logo} alt="logo" />
         <div>
-          <h3 className="text-primary text-xl text-right lg:text-left">
+          <h3 className="text-primary text-3xl md:text-5xl text-right lg:text-left font-bold">
             Cheers
           </h3>
-          <p>
-            <small>Here's to Celebrating You!</small>
-          </p>
         </div>
       </div>
       <div className="dropdown lg:hidden">
