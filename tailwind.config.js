@@ -11,8 +11,12 @@ export default {
           DEFAULT: "#fcb900",
         },
       },
+      fontFamily: {
+        vidaloka: ["Vidaloka", "sans-serif"],
+      },
       backgroundImage: {
         banner: "url('https://i.ibb.co/DzVtV7r/banner.jpg')",
+        portfolio: "url('https://i.ibb.co/tmnhcfM/bg-portfolio.jpg')",
       },
     },
   },
