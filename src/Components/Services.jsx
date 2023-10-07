@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Services = () => {
   const [services, setServices] = useState([]);
+  const location = useLocation();
+  useEffect(() => {
+    if (location.state) {
+      window.scrollTo({ top: 720, behavior: "smooth" });
+    }
+  }, [location.state]);
   useEffect(() => {
     fetch("/services.json")
       .then((res) => res.json())
@@ -31,7 +37,10 @@ const Services = () => {
                   Pricing starts from:{" "}
                   <span className="font-bold">{service.pricing}</span>
                 </h2>
-                <Link to={`/services/${service.id}`}>
+                <Link
+                  to={`/services/${service.id}`}
+                  state={`/services/${service.id}`}
+                >
                   <button className="w-full py-2 bg-primary text-white font-semibold">
                     Full Details
                   </button>

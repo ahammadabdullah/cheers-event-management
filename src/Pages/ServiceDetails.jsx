@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 
 const ServiceDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);
   const [service, setService] = useState({});
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
   useEffect(() => {
     fetch("/services.json")
       .then((res) => res.json())
@@ -18,9 +22,9 @@ const ServiceDetails = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <img src={service?.image} alt="" />
+      <img className="w-full" src={service?.image} alt="" />
       <div className="w-3/4 mx-auto">
-        <h3 className="text-4xl py-3 font-bold text-primary">
+        <h3 className="text-4xl py-4 font-bold text-primary">
           {service?.headline}{" "}
         </h3>
         <p>{service?.fullDesc}</p>
@@ -35,7 +39,7 @@ const ServiceDetails = () => {
           ))}
         </ul>
         <div className="mt-4 mb-20">
-          <Link to={"/"}>
+          <Link to={"/"} state={true}>
             <button className="py-3 px-4 mr-3 bg-primary text-white font-semibold">
               Go Back Home
             </button>

@@ -1,14 +1,19 @@
 import { IoLogoGoogle } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
 import { toast } from "react-hot-toast";
 
 const Login = () => {
   const { googleLogin, signInWithEmailPass } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleGoogleLogin = () => {
     googleLogin()
-      .then(() => toast.success("Successfully logged in"))
+      .then(() => {
+        toast.success("Successfully logged in");
+        navigate(location?.state ? location.state : "/");
+      })
       .catch((err) => toast.error(err.message));
   };
   const handleEmailLogin = (e) => {
@@ -19,6 +24,7 @@ const Login = () => {
     signInWithEmailPass(email, password)
       .then(() => {
         toast.success("Successfully logged in");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((err) => {
         toast.error(err.message);
@@ -29,9 +35,16 @@ const Login = () => {
       <div className="max-w-7xl mx-auto py-20">
         <div className="md:w-2/4 w-[90%] bg-white text-center mx-auto">
           <div className="w-3/4  mx-auto">
-            <h3 className="text-3xl font-bold pt-20 pb-10 text-primary">
-              Login to your account
-            </h3>
+            {location?.state ? (
+              <h3 className="text-3xl font-bold pt-20 pb-10 text-primary">
+                You need to login first
+              </h3>
+            ) : (
+              <h3 className="text-3xl font-bold pt-20 pb-10 text-primary">
+                Login to your account
+              </h3>
+            )}
+
             <hr />
             <form onSubmit={handleEmailLogin} className="pt-10">
               <label className="block text-left">Email Address</label>
