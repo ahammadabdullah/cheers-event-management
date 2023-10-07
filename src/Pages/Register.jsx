@@ -6,13 +6,20 @@ import auth from "../config/config.firebase";
 
 const Register = () => {
   const { createAccWithEmailPass } = useAuth();
-
+  const passRegex = /^(?=.*[A-Z])(?=.*[!@#\$%\^&\*])(?=.{6,})/;
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     const name = e.target.name.value;
     const photoURL = e.target.photo.value;
+
+    if (!passRegex.test(password)) {
+      toast.error(
+        "Passwords  must have 6 characters , a Upper Case character and special characters "
+      );
+      return;
+    }
     createAccWithEmailPass(email, password, name, photoURL)
       .then(() =>
         updateProfile(auth.currentUser, {
